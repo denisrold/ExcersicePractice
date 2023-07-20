@@ -6,9 +6,10 @@ import java.util.List;
 public class MiniMaxSum {
 
     public static void calculateMinMax(List<Integer> arr ){
-      int minAux = arr.get(0);
-      int maxAux = arr.get(0);
-      int total = 0;
+    // Se usa long para numeros extremadamente grandes 
+    long minAux = arr.get(0);
+    long maxAux = arr.get(0);
+    long total = 0;
       for(int num : arr){
         if(minAux >num) minAux = num;
         if(maxAux<num) maxAux = num;

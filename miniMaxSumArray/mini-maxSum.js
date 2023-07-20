@@ -1,6 +1,6 @@
 function miniMaxSum(arr) {
-  let minAux = 0;
-  let maxAux = 0;
+  let minAux = arr[0];
+  let maxAux = arr[0];
   let total = 0;
   for (let i = 0; i < arr.length; i++) {
     if (minAux > arr[i]) minAux = arr[i];

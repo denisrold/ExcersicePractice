@@ -34,7 +34,7 @@ public class PlusMinus {
         arr.add(0);
         arr.add(4);
         arr.add(1);
-        
+
         calculateRatios(arr);
     }
 }

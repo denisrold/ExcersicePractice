@@ -1,12 +1,12 @@
-const plusMinus = (array) => {
+const plusMinus = (arr) => {
   let positiveCount = 0;
   let negativeCount = 0;
   let zeroCount = 0;
-  const n = array.length;
+  const n = arr.length;
 
-  for (let nums of array) {
+  for (let nums of arr) {
     if (nums > 0) positiveCount++;
-    if (nums < 0) negativeCount--;
+    if (nums < 0) negativeCount++;
     else {
       zeroCount++;
     }

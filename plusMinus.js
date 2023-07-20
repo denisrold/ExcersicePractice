@@ -7,7 +7,7 @@ const plusMinus = (arr) => {
   for (let nums of arr) {
     if (nums > 0) positiveCount++;
     if (nums < 0) negativeCount++;
-    else {
+    else if (nums == 0) {
       zeroCount++;
     }
   }

@@ -6,9 +6,7 @@ const timeConversion = (s) => {
 
   const PM = s.slice(-2);
   if (PM == "PM" && hours != 12) hours += 12;
-  else if (PM != "PM" && hours === 12) {
-    hours = 0;
-  }
+  else if (PM != "PM" && hours === 12) hours = 0;
 
   formatHours = hours.toString().padStart(2, "0");
   formatMinuts = minutes.toString().padStart(2, "0");

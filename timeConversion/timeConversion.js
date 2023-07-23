@@ -13,7 +13,6 @@ const timeConversion = (s) => {
   formatHours = hours.toString().padStart(2, "0");
   formatMinuts = minutes.toString().padStart(2, "0");
   formatSeconds = seconds.toString().padStart(2, "0");
-  console.log(formatHours + ":" + formatMinuts + ":" + formatSeconds);
 
   return `${formatHours + ":" + formatMinuts + ":" + formatSeconds}`;
 };

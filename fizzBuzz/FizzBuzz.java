@@ -30,3 +30,19 @@ public class FizzBuzz {
         fizzBuzz(15);
     }
 }
+/*
+Forma eficiente de hacerlo 
+
+  for (int number = 1; number <= n; number++) {
+            if (number % 3 == 0 && number % 5 == 0) {
+                System.out.println("FizzBuzz");
+            } else if (number % 3 == 0) {
+                System.out.println("Fizz");
+            } else if (number % 5 == 0) {
+                System.out.println("Buzz");
+            } else {
+                System.out.println(number);
+            }
+
+
+ */

@@ -14,7 +14,7 @@ const mediaElement = (arr) => {
   }
   let mediaLength = Math.floor(arr.length / 2);
 
-  return newArray[3];
+  return newArray[mediaLength];
 };
 
 const arrayNumber = [0, 1, 2, 4, 6, 5, 3];

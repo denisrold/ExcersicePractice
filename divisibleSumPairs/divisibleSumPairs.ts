@@ -13,5 +13,5 @@ function divisibleSumPairs2(n:number , k:number, ar:number[]):number {
   }
   
   let arr2:number[] = [1, 3, 2, 6, 1, 2];
-  console.log(divisibleSumPairs(6, 3, arr));
+  console.log(divisibleSumPairs2(6, 3, arr2));
   

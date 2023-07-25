@@ -1,4 +1,5 @@
 const mediaElement = (arr) => {
+  /*
   let newArray = arr.slice(0);
   let flag = true;
   while (flag) {
@@ -11,10 +12,14 @@ const mediaElement = (arr) => {
         flag = true;
       }
     }
-  }
+  }*/
+
+  const sortArr = arr.sort((a, b) => {
+    return a - b;
+  });
   let mediaLength = Math.floor(arr.length / 2);
 
-  return newArray[mediaLength];
+  return sortArr[mediaLength];
 };
 
 const arrayNumber = [0, 1, 2, 4, 6, 5, 3];

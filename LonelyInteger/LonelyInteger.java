@@ -1,12 +1,21 @@
 package LonelyInteger;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class LonelyInteger {
-    public static Integer lonelyInteger(List<Integer> arr){
-        System.out.println(arr);
-        return 1;
+    public static Object lonelyInteger(List<Integer> arr){
+       Map<Integer,Integer> numberMap = new HashMap<>();
+       
+       for(Integer num : arr){
+         numberMap.put(num,numberMap.getOrDefault(num,0)+1);
+       }
+       for(Integer num : arr){
+            if(numberMap.get(num) ==1){return num;}
+        }
+        return "Not Lonely Number";
     }
 
     public static void main(String[] args) {

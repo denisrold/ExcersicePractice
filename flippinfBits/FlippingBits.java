@@ -15,7 +15,3 @@ public class FlippingBits {
         System.out.println(flippedNumber);
     }
 }
-         long mask = 0xFFFFFFFF; 
-         long flippedNumber = n ^ mask;
-         flippedNumber = flippedNumber & 0xFFFFFFFFL;
-         return flippedNumber;

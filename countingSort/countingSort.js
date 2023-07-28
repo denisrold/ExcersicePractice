@@ -1,10 +1,10 @@
 const countinSort = (arrNumber) => {
   console.log(arrNumber);
-  let CountingMap = [];
+  //Creo un neuvo array y lo lleno de 0;
+  let CountingMap = new Array(101).fill(0);
 
   for (let i = 0; i < arrNumber.length; i++) {
-    if (!CountingMap[i]) CountingMap[i] = 0;
-    CountingMap[arrNumber[i]] = CountingMap[arrNumber[i]] + 1;
+    CountingMap[arrNumber[i]]++;
   }
 
   return CountingMap;

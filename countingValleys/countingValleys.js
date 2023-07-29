@@ -8,8 +8,10 @@ const countingValley = (arr) => {
     const step = arr[i];
     if (step == "U") {
       level++;
+      console.log(level);
     } else if (step == "D") {
       level--;
+      console.log(level);
     }
   }
   if (level < 0 && !isInValley) {

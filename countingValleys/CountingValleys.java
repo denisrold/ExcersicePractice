@@ -12,16 +12,16 @@ class  CountingValleys{
         for(int i = 0; i < arr.length; i++ ){
 
             String step = arr[i];
-            if(step.equals("U")){
+            if(step =="U"){
                 level+=1;
             }
-            else if(step.equals("D")){
+            else if(step=="D"){
                 level-=1;
             }
             if(level < 0 && !isInValley){
                 isInValley = true;
             } 
-             if(level >= 0 && isInValley){
+             if(level > 0 && isInValley){
                 isInValley = false;
                 valleys++;
             } 

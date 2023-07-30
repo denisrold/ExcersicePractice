@@ -1,4 +1,4 @@
-const countingValley2 = (arr:string[]):number => {
+const countingValley2 = (arr:string):number => {
     let level:number = 0;
     let valleys:number = 0;
     let isInValley = false;
@@ -13,5 +13,5 @@ for(let i =0; i < arr.length; i++){
  console.log(valleys)
  return valleys;
 };
-const arr2:string[] = ["U", "D", "D", "D", "U", "D", "U", "U"];
+const arr2:string = "DDUUDDUDUUUD";
   console.log(countingValley2(arr2));

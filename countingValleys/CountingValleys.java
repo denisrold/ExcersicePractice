@@ -12,10 +12,10 @@ class  CountingValleys{
         for(int i = 0; i < arr.length; i++ ){
 
             String step = arr[i];
-            if(step =="U"){
+            if(step.equals("U")){
                 level+=1;
             }
-            else if(step=="D"){
+            else if(step.equals("D")){
                 level-=1;
             }
             if(level < 0 && !isInValley){

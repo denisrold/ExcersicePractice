@@ -8,7 +8,7 @@ function flippingMatrix(matrix) {
         matrix[i][j],
         matrix[i][n - 1 - j], // Complemento a uno de j
         matrix[n - 1 - i][j], // Complemento a uno de i
-        matrix[n - 1 - i][n - 1 - j] // Complemento a uno de i y j
+        matrix[n - 1 - i][n - 1 - j] // COmplemento de I yde J
       );
       sum += maxElement;
     }
@@ -16,7 +16,7 @@ function flippingMatrix(matrix) {
 
   return sum;
 }
-console.log(119 + 56 + 125 + 114);
+
 const ok = [
   [112, 42, 83, 119],
   [56, 125, 56, 49],

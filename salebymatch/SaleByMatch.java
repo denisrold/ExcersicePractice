@@ -17,7 +17,6 @@ public class SaleByMatch{
         return cont;
     }
 
-
     public static void main(String[] args){
     
     List<Integer> ar = new ArrayList<>();

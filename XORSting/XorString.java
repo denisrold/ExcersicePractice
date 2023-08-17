@@ -7,6 +7,7 @@ public class XorString {
         Scanner scanner = new Scanner(System.in);
         String scannerIn1 = scanner.nextLine();
         String scannerIn2 = scanner.nextLine();
+        scanner.close();
        
         System.out.println(strings_xor(scannerIn1, scannerIn2));
     }

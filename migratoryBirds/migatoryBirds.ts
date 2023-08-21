@@ -9,6 +9,7 @@ const migratoryBirds1 = (arr:number[]):number => {
       } else {
         birdCount[bird] += 1;
       }
+      
       if (birdCount[bird] > maxCount) {
         maxCount = birdCount[bird];
         commonBird = bird;

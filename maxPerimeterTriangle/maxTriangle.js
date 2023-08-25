@@ -2,7 +2,7 @@ function maximumPerimeterTriangle(sticks) {
   // Write your code here
   let maxPerimeter = 0;
   let maxTriangle = [];
-  orderSticks = sticks.sort((a, b) => a - b);
+  let orderSticks = sticks.sort((a, b) => a - b);
 
   for (let i = 0; i < orderSticks.length - 2; i++) {
     for (let j = i + 1; j < orderSticks.length - 1; j++) {

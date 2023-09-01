@@ -1,33 +1,13 @@
 function pageCount(n, p) {
-  let count = 1;
-  let i = 1;
-  while (count <= 6) {
-    if (i % 2 != 0) {
-      if (i === p || i + 1 === p) {
-        return count;
-      }
-      count++;
-    }
-    i++;
-  }
+  // Calculamos el número de páginas a voltear desde el principio
+  const fromFront = Math.floor(p / 2);
+
+  // Calculamos el número de páginas a voltear desde el final
+  const fromBack = Math.floor(n / 2) - Math.floor(p / 2);
+
+  // Devolvemos el mínimo de páginas a voltear
+  return Math.min(fromFront, fromBack);
 }
-
-const n = 6;
-const p = 2;
+const n = 5;
+const p = 4;
 console.log(pageCount(n, p));
-/*
-page 1 = 1, 2
-page 2 = 3, 4
-page 3 = 5, 6
-page 4 = 7, 8   
-page 5 = 8, 9
-page 6 = 10, 11 
-tengo que crear un libro con  indices segun la cantidad de pagina que me dan teniendo en cuenta la pagina 0 
-
-el largo del libro me lo describe n . que creara el indice de cantidad de paginas. 
-una pagina abarca dos numeros 
-luego debo buscar p dentro del libro y ver en que pagina esta 
-p sera el numero de hoja 
-devo devolver en que numero de pagina esta la hoja que busco. 
-
-*/

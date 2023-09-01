@@ -1,5 +1,15 @@
 function pageCount(n, p) {
-  console.log(n, p);
+  let count = 1;
+  let i = 1;
+  while (count <= 6) {
+    if (i % 2 != 0) {
+      if (i === p || i + 1 === p) {
+        return count;
+      }
+      count++;
+    }
+    i++;
+  }
 }
 
 const n = 6;

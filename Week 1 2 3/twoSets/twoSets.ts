@@ -3,7 +3,7 @@ function getTotalX1(a:number[], b:number[]):number {
     let mcmA:number = a[0];
     let mcdB:number = b[0];
 
-    function mcd(x, y) {
+    function mcd(x:number, y:number) {
       while (y !== 0) {
         const temp = y;
   
@@ -26,8 +26,6 @@ function getTotalX1(a:number[], b:number[]):number {
       mcdB = mcd(mcdB, b[i]);
     }
     
-   console.log(mcmA)
-    console.log(mcdB) 
     for (let i = mcmA; i <= mcdB; i += mcmA) {
       if (mcdB % i === 0) {
         result++;

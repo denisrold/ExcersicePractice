@@ -18,5 +18,5 @@ function caesarsCipher3 (s2:string, k2:number):string {
 let s2 = "middle-Outz";
 let k2 = 2;
 
-caesarsCipher3(s2, k2);
+console.log(caesarsCipher3(s2, k2));
 //okffng-Qwvb

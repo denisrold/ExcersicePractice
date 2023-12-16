@@ -43,7 +43,6 @@ function anagram(s) {
       changeesNeded += 1;
     }
   }
-  console.log(changeesNeded);
   return changeesNeded;
 }
 console.log(anagram("xaxbbcxx"));
